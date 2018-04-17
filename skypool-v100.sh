@@ -2,6 +2,7 @@
 
 cd $HOME/Downloads
 wget https://github.com/skypool-org/skypool-nimiq-miner/releases/download/v1.0.0/skypool-nimiq-v1.0.0-linux-x64-compat.zip && unzip skypool-nimiq-v1.0.0-linux-x64-compat.zip
+sleep 5s
 cd skypool-nimiq-v1.0.0-linux-x64-compat
 echo "{
   \"address\": \"NQ34 A51K 3K6J 4E6Q 07JR VBQA 0JJ3 HC5E AG7U\",
