@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y &&
 sudo curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &&
 sudo apt install -y nodejs &&
 sudo apt install -y git &&
