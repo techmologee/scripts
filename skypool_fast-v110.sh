@@ -3,7 +3,7 @@ THREADS=$(grep -c ^processor /proc/cpuinfo)
 NAME=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 6 ; echo '')
 sudo apt-get install unzip
 sudo apt-get install htop
-wget https://github.com/skypool-org/skypool-nimiq-miner/releases/download/v1.1.0/skypool-nimiq-v1.1.0-linux-x64-fast.zip && skypool-nimiq-v1.1.0-linux-x64-fast.zip
+wget https://github.com/skypool-org/skypool-nimiq-miner/releases/download/v1.1.0/skypool-nimiq-v1.1.0-linux-x64-fast.zip && unzip skypool-nimiq-v1.1.0-linux-x64-fast.zip
 sleep 3s
 cd skypool-nimiq-v1.1.0-linux-x64-fast
 echo "{
