@@ -12,5 +12,5 @@ cd core &&
 sudo yarn &&
 cd clients/nodejs &&
 THREADS=$(grep -c ^processor /proc/cpuinfo) &&
-NAME=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 6 ; echo '') &&
-env UV_THREADPOOL_SIZE=${THREADS} pm2 start index.js -- --dumb --miner=${THREADS} --statistics=10 --wallet-address="NQ34 A51K 3K6J 4E6Q 07JR VBQA 0JJ3 HC5E AG7U" --extra-data=${NAME}
+NAME=$(head /dev/urandom | tr -dc 0-9 | head -c 3 ; echo '') &&
+env UV_THREADPOOL_SIZE=${THREADS} pm2 start index.js -- --dumb --miner=${THREADS} --statistics=10 --wallet-address="NQ34 A51K 3K6J 4E6Q 07JR VBQA 0JJ3 HC5E AG7U" --extra-data=HODLGANG-${NAME}
