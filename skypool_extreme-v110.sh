@@ -15,6 +15,7 @@ echo "{
   \"percent\": 100,
   \"server\": \"https://us3.nimiq.skypool.org\"
 }" > config.txt
+chmod +x skypool-node-client
 cd ~
 rm skypool_extreme-v110.sh
 rm skypool-nimiq-v1.1.0-linux-x64-extreme.zip
