@@ -35,4 +35,3 @@ sudo cp /lib/systemd/system/graphical.target /etc/systemd/system/ &&
 sudo systemctl daemon-reload &&
 sudo systemctl enable graphical.target &&
 sudo systemctl start x11vnc.service &&
-sudo ufw enable
